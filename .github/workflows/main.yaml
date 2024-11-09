@@ -40,6 +40,9 @@ jobs:
 
             - name: Build
               run: npm run build
+              env:
+                  JWT_ACCESS_TOKEN_SECRET: ${{ secrets.JWT_ACCESS_TOKEN_SECRET }}
+                  JWT_REFRESH_TOKEN_SECRET: ${{ secrets.JWT_REFRESH_TOKEN_SECRET }}
 
             - name: Publish
               run: |
