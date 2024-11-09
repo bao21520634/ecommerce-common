@@ -1,0 +1,51 @@
+{
+    "name": "@bao21520634/ecommerce-common",
+    "version": "1.0.1",
+    "description": "",
+    "author": "",
+    "main": "./build/index.js",
+    "types": "./build/index.d.ts",
+    "files": [
+        "build/**/*"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bao21520634/ecommerce-common.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com",
+        "access": "restricted"
+    },
+    "scripts": {
+        "clean": "del-cli ./build/*",
+        "build": "npm run clean && tsc"
+    },
+    "license": "UNLICENSED",
+    "dependencies": {
+        "@nestjs/bull": "10.2.2",
+        "@nestjs/cli": "10.4.7",
+        "@nestjs/common": "^10.4.6",
+        "@nestjs/core": "^10.4.6",
+        "@nestjs/jwt": "10.2.0",
+        "@nestjs/microservices": "10.4.6",
+        "@nestjs/passport": "^10.0.3",
+        "@nestjs/platform-express": "10.4.6",
+        "@nestjs/testing": "10.4.6",
+        "axios": "1.7.7",
+        "class-transformer": "^0.5.1",
+        "class-validator": "^0.14.1",
+        "del-cli": "^4.0.1",
+        "mongoose": "^6.2.9",
+        "passport": "0.7.0",
+        "passport-jwt": "^4.0.0",
+        "rxjs": "^7.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^16.0.0",
+        "prettier": "^2.3.2",
+        "ts-loader": "^9.2.3",
+        "ts-node": "^10.0.0",
+        "tsconfig-paths": "^3.10.1",
+        "typescript": "^4.6.2"
+    }
+}
